@@ -438,6 +438,82 @@ body {
     text-decoration: underline;
 }
 
+.more-offer {
+    max-width: 1280px;
+    margin: 0 auto;
+    min-height: 420px;
+    background: #d7ecee url("images/more-background.jpeg") left center / cover no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2.2rem 5.2rem;
+}
+
+.more-offer__content {
+    width: 100%;
+    max-width: 640px;
+    margin-left: auto;
+    text-align: center;
+    color: #1f4f88;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.more-offer__content h2 {
+    margin: 0;
+    font-size: 1.45rem;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+}
+
+.more-offer__content h3 {
+    margin: 0.95rem 0 0.2rem;
+    font-size: 0.92rem;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.more-offer__content p {
+    margin: 0.1rem 0;
+    font-size: 0.72rem;
+    line-height: 1.35;
+    font-weight: 600;
+}
+
+.more-offer__content a {
+    margin-top: 1.15rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 188px;
+    min-height: 40px;
+    border-radius: 999px;
+    text-decoration: none;
+    background: #8a55c5;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 800;
+}
+
+.more-offer__content small {
+    position: absolute;
+    right: 5.2rem;
+    bottom: 1.1rem;
+    margin: 0;
+    display: block;
+    text-align: right;
+    max-width: 360px;
+    font-size: 0.54rem;
+    line-height: 1.25;
+    color: #6f8ead;
+}
+
 .site-footer {
     background: #ffffff;
     color: #2b2f33;
@@ -555,7 +631,31 @@ body {
         padding-right: 1.5rem;
     }
 
-    .coming-soon__grid {
+    .more-offer {
+        background-size: cover;
+        background-position: left top;
+        justify-content: center;
+        min-height: 480px;
+        padding: 2.2rem 1.5rem 3rem;
+    }
+
+    .more-offer__content {
+        margin-top: 150px;
+        max-width: 420px;
+        width: 100%;
+        background: rgba(215, 236, 238, 0.9);
+        border-radius: 14px;
+        padding: 1.5rem 1.2rem;
+    }
+
+    .more-offer__content small {
+        right: 1.5rem;
+        bottom: 0.95rem;
+        max-width: 72%;
+        text-align: right;
+    }
+
+    .movie-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
@@ -652,5 +752,27 @@ body {
     .parks-card__body {
         min-height: auto;
         padding: 1rem 1rem 1.35rem;
+    }
+
+    .more-offer {
+        min-height: 430px;
+        padding: 1.2rem 1rem;
+    }
+
+    .more-offer__content {
+        margin-top: 135px;
+        padding: 1.2rem 0.95rem;
+    }
+
+    .more-offer__content h2 {
+        font-size: 1.35rem;
+    }
+
+    .more-offer__content h3 {
+        font-size: 1rem;
+    }
+
+    .more-offer__content p {
+        font-size: 0.8rem;
     }
 }
