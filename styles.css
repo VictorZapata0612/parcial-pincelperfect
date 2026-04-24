@@ -81,7 +81,7 @@ body {
     display: inline-flex;
     align-items: center;
     flex: 0 0 auto;
-    width: 260px;
+    width: 330px;
     height: 40px;
     border: 1px solid #a7a7a7;
     border-radius: 10px;
@@ -350,6 +350,10 @@ body {
     font-weight: 800;
     font-size: 0.82rem;
     letter-spacing: 0;
+}
+
+.footer-links-top a {
+    font-weight: 400;
 }
 
 .footer-links-top {
