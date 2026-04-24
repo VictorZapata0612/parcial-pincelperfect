@@ -435,6 +435,7 @@ body {
     line-height: 1.2;
     font-weight: 800;
     text-decoration: none;
+    text-decoration: underline;
 }
 
 .site-footer {
