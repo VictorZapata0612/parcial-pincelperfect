@@ -632,8 +632,11 @@ body {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     .coming-soon__grid {
 =======
+=======
+>>>>>>> dc5193f33f53f2a838a71d815f9e05eb4f45dfdb
     .more-offer {
         background-size: cover;
         background-position: left top;
@@ -659,7 +662,10 @@ body {
     }
 
     .movie-grid {
+<<<<<<< HEAD
 >>>>>>> main
+=======
+>>>>>>> dc5193f33f53f2a838a71d815f9e05eb4f45dfdb
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
@@ -758,8 +764,11 @@ body {
         padding: 1rem 1rem 1.35rem;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
+=======
+>>>>>>> dc5193f33f53f2a838a71d815f9e05eb4f45dfdb
 
     .more-offer {
         min-height: 430px;
@@ -783,4 +792,7 @@ body {
         font-size: 0.8rem;
     }
 }
+<<<<<<< HEAD
 >>>>>>> main
+=======
+>>>>>>> dc5193f33f53f2a838a71d815f9e05eb4f45dfdb
