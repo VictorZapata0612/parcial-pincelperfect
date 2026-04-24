@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -120,19 +126,20 @@ body {
 
 .page-main {
     min-height: 40vh;
-    padding: 1.2rem 1.25rem 4rem;
+    padding: 0 1.25rem 4rem;
 }
 
 .hero-banner {
     max-width: 1280px;
     margin: 0 auto;
-    min-height: 577px;
+    min-height: 0;
+    aspect-ratio: 1321 / 470;
     border-radius: 0;
     position: relative;
     overflow: hidden;
     display: flex;
     align-items: center;
-    padding: 0 4.4rem;
+    padding: 0 4.8rem;
     background:
         linear-gradient(90deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.78) 22%, rgba(0, 0, 0, 0.34) 46%, rgba(0, 0, 0, 0.08) 68%, rgba(0, 0, 0, 0.18) 100%),
         url("images/banner-background.png") center center / cover no-repeat;
@@ -154,42 +161,42 @@ body {
     position: relative;
     z-index: 1;
     width: 100%;
-    max-width: 350px;
-    margin-left: 1.2rem;
-    margin-top: -0.4rem;
+    max-width: 285px;
+    margin-left: 1.7rem;
+    margin-top: -0.2rem;
 }
 
 .hero-banner__title {
     display: block;
-    width: min(280px, 100%);
+    width: min(235px, 100%);
     height: auto;
 }
 
 .hero-banner__caption {
-    margin: 0.7rem 0 0;
+    margin: 0.45rem 0 0;
     color: #f5f0ea;
-    font-size: 0.84rem;
-    line-height: 1.5;
+    font-size: 0.67rem;
+    line-height: 1.35;
 }
 
 .hero-banner__actions {
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
-    margin-top: 1rem;
+    gap: 0.55rem;
+    margin-top: 0.75rem;
     width: 100%;
-    max-width: 172px;
+    max-width: 143px;
 }
 
 .hero-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 42px;
-    padding: 0.7rem 1.25rem;
+    min-height: 27px;
+    padding: 0.35rem 0.8rem;
     border-radius: 999px;
     text-decoration: none;
-    font-size: 0.88rem;
+    font-size: 0.62rem;
     font-weight: 700;
     line-height: 1;
     transition: transform 0.18s ease, background-color 0.18s ease, border-color 0.18s ease;
@@ -205,8 +212,8 @@ body {
 }
 
 .hero-btn--ghost {
-    background: rgba(20, 20, 20, 0.42);
-    border: 1px solid rgba(255, 255, 255, 0.34);
+    background: rgba(20, 20, 20, 0.28);
+    border: 1px solid rgba(255, 255, 255, 0.58);
     color: #ffffff;
 }
 
@@ -387,11 +394,12 @@ body {
     }
 
     .page-main {
-        padding: 1rem 1rem 3rem;
+        padding: 0 1rem 3rem;
     }
 
     .hero-banner {
-        min-height: 480px;
+        aspect-ratio: auto;
+        min-height: 390px;
         padding: 2rem 1.5rem;
         align-items: flex-end;
         background-position: 63% center;
