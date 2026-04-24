@@ -325,6 +325,109 @@ body {
     line-height: 1.45;
 }
 
+.coming-soon,
+.parks-section {
+    max-width: 1280px;
+    margin: 0 auto;
+    background: #eeeeee;
+    color: #111;
+    text-align: center;
+}
+
+.coming-soon {
+    padding: 2.15rem 5.2rem 2.15rem;
+}
+
+.coming-soon h2,
+.parks-section h2 {
+    margin: 0;
+    font-size: 1.35rem;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1.55rem;
+    margin-top: 2.15rem;
+    text-align: left;
+}
+
+.movie-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+}
+
+.movie-card h3 {
+    margin: 0.8rem 0 0;
+    font-size: 0.78rem;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+.movie-card p {
+    margin: 0.18rem 0 0;
+    font-size: 0.72rem;
+    line-height: 1.35;
+}
+
+.parks-section {
+    padding: 1.35rem 5.2rem 3.1rem;
+}
+
+.parks-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 2.1rem;
+}
+
+.parks-card {
+    background: #fff;
+}
+
+.parks-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.parks-card__body {
+    min-height: 150px;
+    padding: 1.25rem 2.1rem 1.65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parks-card h3 {
+    margin: 0;
+    font-size: 0.98rem;
+    line-height: 1.2;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.parks-card p {
+    margin: 1rem auto 1.15rem;
+    max-width: 31rem;
+    font-size: 0.72rem;
+    line-height: 1.45;
+}
+
+.parks-card a {
+    margin-top: auto;
+    color: #111;
+    font-size: 0.72rem;
+    line-height: 1.2;
+    font-weight: 800;
+    text-decoration: none;
+}
+
 .site-footer {
     background: #ffffff;
     color: #2b2f33;
@@ -435,6 +538,20 @@ body {
         margin: 0 auto;
         width: 100%;
     }
+
+    .coming-soon,
+    .parks-section {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .movie-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .parks-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 640px) {
@@ -496,5 +613,34 @@ body {
     .disney-plus-strip h2 {
         margin-bottom: 1.3rem;
         font-size: 1.25rem;
+    }
+
+    .coming-soon {
+        padding-top: 1.7rem;
+    }
+
+    .coming-soon h2,
+    .parks-section h2 {
+        font-size: 1.18rem;
+    }
+
+    .movie-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.2rem;
+        margin-top: 1.4rem;
+    }
+
+    .parks-section {
+        padding-top: 1.1rem;
+        padding-bottom: 2.2rem;
+    }
+
+    .parks-grid {
+        margin-top: 1.35rem;
+    }
+
+    .parks-card__body {
+        min-height: auto;
+        padding: 1rem 1rem 1.35rem;
     }
 }
